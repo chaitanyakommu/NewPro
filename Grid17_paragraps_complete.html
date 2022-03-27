@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS GRID </title>
+    <style type="text/css">
+        .grid{display: grid;
+          grid: auto auto auto/ auto auto auto auto auto;
+          background-color: aqua;
+          border: 3px solid blue;
+          gap:15px;
+               }
+         .grid> div{background-color: rgba(255, 255, 255, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 20px;
+              font-size: 30px;
+              text-align: center;
+              } 
+        .item1 {
+                      grid-column: 1/span 5 ;} 
+        .item2 {
+                      grid-row: 2/span 3 ;}            
+        .item3 {
+                      grid-column: 2/span 2 ;}
+        .item4 {
+                      grid-column: 4/span 2 ;}
+        .item5 {
+                      grid-column: 2/span 4 ;}        
+      </style>        
+</head>
+<body>
+  <div class="grid">
+    
+    <div class="item1"> 
+        <h2>Header</h2>
+        <p>This grid Layout Concept</p>
+    </div>
+    <div class="item2">  
+        <h2>Menu</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Assumenda, reprehenderit!
+        </P>   
+    </div>
+
+    <div class="item3">  
+        <h2>Main</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum quos voluptatum ipsa, amet sit voluptatem incidunt 
+            excepturi tempore illo ea accusamus aspernatur in eveniet 
+            eos soluta libero accusantium non ad sint. Saepe enim eos 
+            magni recusandae. Quis voluptate vitae vero cumque sit esse
+             facilis error odit excepturi corrupti laborum, ad temporibus 
+             qui repellendus ipsam quas ducimus eligendi corporis doloremque!
+              Magni eius recusandae eum et ipsam similique? Rerum unde
+               sunt repellat voluptate nam a sed maiores velit 
+               voluptatum consectetur, dolorum blanditiis.
+        </p>
+    </div>
+    <div class="item4">  
+        <h2>Right</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eos iste nihil nostrum, accusantium soluta ex inventore alias 
+            nulla, culpa quasi rerum architecto sint vitae voluptates 
+            earum aliquid! Assumenda, voluptate accusamus!
+        </P>    
+        </div>
+    <div class="item5">  
+        <h2>Footer</h2>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+  </div>
+
+</body>
+</html>
